@@ -19,9 +19,9 @@ body header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #fff;
   padding: 10px;
   border-radius: 0 0 2rem 2rem;
@@ -41,14 +41,6 @@ body header nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.9em;
-}
-
-body header input {
-  color: #333;
-  margin: 2px;
-  border: 1px #0353a4 solid;
-  border-radius: 5px;
-  padding: 2px 4px;
 }
 
 body .bg-img {
