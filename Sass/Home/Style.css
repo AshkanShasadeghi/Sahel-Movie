@@ -2,16 +2,16 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
 }
 
-body {
+* body {
+  width: 100%;
   overflow-x: hidden;
 }
 
-body header {
+* body header {
   position: fixed;
-  width: calc(100% - 20px);
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,79 +23,12 @@ body header {
       -ms-flex-pack: center;
           justify-content: center;
   background: #fff;
-  padding: 10px;
   border-radius: 0 0 2rem 2rem;
-  overflow: hidden;
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
-          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+  padding: 5px 0;
   z-index: 1000;
 }
 
-body header nav {
-  margin: 2px;
-}
-
-body header nav a {
-  margin: 2px;
-  color: #0353a4;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.9em;
-}
-
-body .bg-img {
-  width: 100vw;
-  height: 100vh;
-  background: url("./../../Image/Background/01.jpg") center no-repeat;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .bg-img h1 {
-  min-width: 600px;
-  color: #fff;
-  text-align: center;
-  font-size: 5em;
-  border: 2rem #fff solid;
-  border-left: 0;
-  border-right: 0;
-  border-radius: 5rem;
-}
-
-body .main {
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 20px;
-}
-
-body .main .title {
-  text-align: center;
-  font-size: 2em;
-  text-transform: uppercase;
-  color: #0353a4;
-  padding: 20px 0;
-}
-
-body .main .banner {
-  position: relative;
+* body header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,350 +36,245 @@ body .main .banner {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 20px 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-body .main .banner a {
-  border-radius: 2rem;
-  overflow: hidden;
-}
-
-body .main .banner a img {
-  width: 550px;
-}
-
-body .main .news {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-body .main .news .post {
-  width: 190px;
-  height: 285px;
-  border-radius: 1rem;
-  overflow: hidden;
-  margin: 5px 0;
-  -webkit-box-shadow: 0 0 5px #000;
-          box-shadow: 0 0 5px #000;
-  -webkit-transition: 150ms ease-in-out;
-  transition: 150ms ease-in-out;
-}
-
-body .main .news .post img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-body .main .news .post:hover {
-  -webkit-box-shadow: 0 0 20px #000;
-          box-shadow: 0 0 20px #000;
-  scale: 1.05;
-}
-
-body .main .posts {
-  position: relative;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 20px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .main .posts div.post {
-  position: relative;
-  max-width: 800px;
-  height: 300px;
-  margin-bottom: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  border-radius: 1.6rem;
-  overflow: hidden;
-}
-
-body .main .posts div.post .brand {
-  position: relative;
-  height: 100%;
-  width: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #0353a4;
-  padding: 2px;
-}
-
-body .main .posts div.post .brand img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin: 3px 0;
-}
-
-body .main .posts div.post .info {
-  position: relative;
-  height: 100%;
-  width: 570px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 5px;
-}
-
-body .main .posts div.post .info .dv-p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body .main .posts div.post .info .dv-p .p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 3px 0;
-}
-
-body .main .posts div.post .info .dv-p .p article {
-  font-weight: bold;
-  color: #0353a4;
-}
-
-body .main .posts div.post .info .dv-p .p.synopsis p {
-  text-align: right;
-}
-
-body .main .posts div.post .info a {
-  padding: 5px 0;
+* body header nav a {
   text-decoration: none;
-  background: #0353a4;
-  width: 110px;
-  text-align: center;
-  color: #fff;
-  border-radius: 0.2rem;
-  -webkit-transition: 100ms ease-in-out;
-  transition: 100ms ease-in-out;
-}
-
-body .main .posts div.post .info a:hover {
-  background: #ffb400;
-  color: #555;
-}
-
-body .main .posts div.post .show {
-  position: relative;
-  height: 100%;
-  width: 180px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-body .main .posts div.post .show img {
-  width: 100%;
-  height: 270px;
-}
-
-body .main .posts div.post .show .score {
-  width: 100%;
-  height: calc(100% - 270px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .main .posts div.post .show .score i {
   font-size: 1.3em;
-  margin: 0 10px;
+  margin: 0 5px;
+  color: #ff2222;
 }
 
-body .main .posts div.post .show .score i:nth-child(1) {
-  color: chartreuse;
-}
-
-body .main .posts div.post .show .score i:nth-child(2) {
-  color: red;
-}
-
-body footer {
+* body .Home {
   position: relative;
   width: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: #0353a4;
-  margin-top: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("./../../Image/Background/01.jpg") center center/cover no-repeat;
 }
 
-body footer .row {
-  position: relative;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-body footer .row section {
-  width: 50%;
-  padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body footer .row section:nth-child(1) p {
-  color: #fff;
-  font-size: 18px;
-  line-height: calc(100% + 12px);
-}
-
-body footer .row section:nth-child(2) .information {
-  width: 100%;
-}
-
-body footer .row section:nth-child(2) .information .p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-body footer .row section:nth-child(2) .information .p article {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  line-height: calc(100% + 12px);
-}
-
-body footer .row section:nth-child(2) .information .p p {
-  font-size: 18px;
-  color: #fff;
-  line-height: calc(100% + 12px);
-}
-
-body footer .order {
-  width: 100%;
-  padding: 8px 3px;
-}
-
-body footer .order p {
+* body .Home h1 {
   text-align: center;
-  font-family: Vazir;
-  font-size: 1.2em;
+  font-size: 10em;
+  line-height: 100%;
   color: #fff;
 }
 
-@media screen and (max-width: 1140px) {
-  body .main .news .post {
-    width: 126.5px;
-    height: 190px;
-  }
+* body main {
+  position: relative;
+  width: 100%;
 }
 
-@media screen and (max-width: 801px) {
-  body .main .news .post:nth-child(4) {
+* body main .Banner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5px 3px 0 3px;
+}
+
+* body main .Banner a {
+  margin: 5px 0;
+}
+
+* body main .Banner a img {
+  width: calc(300px * 3);
+  height: calc(65px * 3);
+  border-radius: 8px;
+}
+
+* body main .Title {
+  text-align: center;
+  color: #ff2222;
+  font-size: 3em;
+  line-height: calc(100% + 50px);
+}
+
+* body main .New {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+* body main .New a {
+  position: relative;
+}
+
+* body main .New a img {
+  position: relative;
+  width: calc(100px * 2.5);
+  height: calc(150px * 2.5);
+  border-radius: 8px;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+
+* body main .New a:hover img {
+  -webkit-box-shadow: 0 0 30px black;
+          box-shadow: 0 0 30px black;
+}
+
+* body main .TheLastPost {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+* body main .TheLastPost .Post {
+  position: relative;
+  max-width: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+* body main .TheLastPost .Post .Brand {
+  width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ff0000;
+}
+
+* body main .TheLastPost .Post .Brand img {
+  width: 60px;
+  margin: 5px 0;
+  border-radius: 50%;
+}
+
+* body main .TheLastPost .Post .Text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5px 0 5px;
+}
+
+* body main .TheLastPost .Post .Text .info article {
+  font-size: 1.3em;
+  margin: 3px 0;
+}
+
+* body main .TheLastPost .Post .Text .info article strong {
+  color: #ff0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+* body main .TheLastPost .Post .Text .info article strong p {
+  color: #000000;
+  font-weight: normal;
+}
+
+* body main .TheLastPost .Post .Text a {
+  text-align: center;
+  width: 130px;
+  background: #ff0000;
+  padding: 7px 0;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+* body main .TheLastPost .Post .Text a:hover {
+  color: #444;
+  background: #e2e205;
+}
+
+* body main .TheLastPost .Post img {
+  width: 300px;
+}
+
+@media screen and (max-width: 1600px) {
+  body .Home h1 {
+    font-size: 7em;
+  }
+  body .New a:nth-child(5) {
     display: none;
   }
-  body .main .posts {
-    width: 100%;
+  body main .TheLastPost {
+    max-width: 1200px;
   }
-  body .main .posts div.post {
-    width: 100%;
-    margin-top: 10px;
-  }
-}
-
-@media screen and (max-width: 701px) {
-  body .bg-img h1 {
-    width: 350px;
-    font-size: 3.2em;
-    border: 1.2rem #fff solid;
-    border-left: 0;
-    border-right: 0;
+  body main .TheLastPost .Post {
+    max-width: 1400px;
   }
 }
 
-@media screen and (max-width: 632px) {
-  body .main .news .post:nth-child(2) {
+@media screen and (max-width: 1400px) {
+  body main .New a:nth-child(6) {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background: crimson;
+  }
+  body main .TheLastPost {
+    width: 100%;
+  }
+  body main .TheLastPost .Post {
+    max-width: 950px;
   }
 }
 /*# sourceMappingURL=Style.css.map */
