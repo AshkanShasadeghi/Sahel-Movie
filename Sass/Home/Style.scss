@@ -184,6 +184,60 @@
           }
         }
       }
+
+      &.PostInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img.Cover {
+          width: 350px;
+          border-radius: 10px;
+          margin: 20px 0;
+        }
+
+        .Information {
+          max-width: calc(800px - calc(7px * 2));
+          border: 2px #ff2222 solid;
+          padding: 5px 7px;
+          border-radius: 10px;
+
+          article {
+            display: flex;
+            flex-direction: row;
+            margin: 2px 0;
+            font-size: 0.9em;
+
+            strong {
+              color: #ff2222;
+            }
+            p {
+              line-height: calc(100% + 5px);
+            }
+          }
+        }
+        .Link {
+          width: 300px;
+          margin: 20px 0;
+          a {
+            display: block;
+            text-align: center;
+            padding: 7px 0;
+            margin: 3px 0;
+            background: #ff2222;
+            border: 2px #ff2222 solid;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+              color: #ff2222;
+              background: #fff;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -214,12 +268,12 @@
   }
 }
 
-@media screen and (max-width: 1400px){
-  body{
-    main{
-      .Banner{
-        a{
-          img{
+@media screen and (max-width: 1400px) {
+  body {
+    main {
+      .Banner {
+        a {
+          img {
             width: calc(300px * 1.8);
             height: calc(65px * 1.8);
           }
@@ -229,12 +283,12 @@
   }
 }
 
-@media screen and (max-width: 1200px){
-  body{
-    main{
-      .Banner{
-        a{
-          img{
+@media screen and (max-width: 1200px) {
+  body {
+    main {
+      .Banner {
+        a {
+          img {
             width: calc(300px * 1.6);
             height: calc(65px * 1.6);
           }
@@ -247,9 +301,9 @@
 @media screen and (max-width: 1080px) {
   body {
     main {
-      .Banner{
-        a{
-          img{
+      .Banner {
+        a {
+          img {
             width: calc(300px * 1.4);
             height: calc(65px * 1.4);
           }
@@ -300,9 +354,9 @@
       }
     }
     main {
-      .Banner{
-        a{
-          img{
+      .Banner {
+        a {
+          img {
             width: calc(300px * 1.2);
             height: calc(65px * 1.2);
           }
@@ -341,9 +395,9 @@
 @media screen and (max-width: 800px) {
   body {
     main {
-      .Banner{
-        a{
-          img{
+      .Banner {
+        a {
+          img {
             width: calc(300px * 1);
             height: calc(65px * 1);
           }
@@ -364,14 +418,14 @@
   }
 }
 
-@media screen and (max-width: 700px){
-  body{
-    main{
-      .Banner{
-        a{
-          img{
-            width: calc(300px * .9);
-            height: calc(65px * .9);
+@media screen and (max-width: 700px) {
+  body {
+    main {
+      .Banner {
+        a {
+          img {
+            width: calc(300px * 0.9);
+            height: calc(65px * 0.9);
           }
         }
       }
@@ -427,13 +481,13 @@
   }
 }
 
-@media screen and (max-width: 558px){
-  body{
-    main{
-      .Banner{
-        a{
+@media screen and (max-width: 558px) {
+  body {
+    main {
+      .Banner {
+        a {
           margin: 2px;
-          img{
+          img {
             width: 100%;
             height: 100%;
           }
@@ -443,19 +497,19 @@
   }
 }
 
-@media screen and (max-width: 445px){
-  body{
-    .Home{
-      h1{
+@media screen and (max-width: 445px) {
+  body {
+    .Home {
+      h1 {
         font-size: 4em;
       }
     }
-    main{
-      .Title{
+    main {
+      .Title {
         font-size: 2em;
       }
-      .New{
-        a:nth-child(3){
+      .New {
+        a:nth-child(3) {
           display: none;
         }
       }
