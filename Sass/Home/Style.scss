@@ -201,6 +201,7 @@
           border: 2px #ff2222 solid;
           padding: 5px 7px;
           border-radius: 10px;
+          margin: 0 auto;
 
           article {
             display: flex;
@@ -234,6 +235,41 @@
             &:hover {
               color: #ff2222;
               background: #fff;
+            }
+          }
+        }
+      }
+    }
+    footer {
+      background: #ff2222;
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 0;
+
+      section {
+        width: 50%;
+        padding: 0 50px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        h2 {
+          color: #fff;
+          font-size: 2.5em;
+        }
+        p {
+          line-height: calc(100% + 10px);
+          color: #e0e0e0;
+        }
+        article {
+          margin-bottom: 5px;
+          strong {
+            color: #fff;
+            ion-icon {
+              margin-bottom: -1.5px;
             }
           }
         }
@@ -411,6 +447,49 @@
           }
           &:nth-child(5) {
             display: none;
+          }
+        }
+      }
+    }
+    footer {
+      background: #ff2222;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+
+      section {
+        max-width: 350px;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h2 {
+          color: #fff;
+          font-size: 2em;
+        }
+        p {
+          line-height: calc(100% + 10px);
+          color: #e0e0e0;
+          font-size: .8em;
+        }
+        article {
+          text-align: left;
+          margin-bottom: 5px;
+          font-size: .8em;
+          strong {
+            color: #fff;
+            ion-icon {
+              margin-bottom: -1.5px;
+            }
+          }
+          p{
+            display: block;
+            text-align: center;
           }
         }
       }
